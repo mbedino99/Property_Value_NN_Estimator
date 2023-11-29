@@ -11,6 +11,7 @@
       - Understanding the upper/lower bounds, and resolving regression visual errors.
 
 ## Nathan-Andrew Tompkins
+  ### _code located in file: nn_model_tuning_2_
   ### Keras Tuner structure
   - Using the Keras-Tuner library our hyperparameter tuning function initializes a Sequential keras model and uses four separate activation functions to test on for the hidden layers: 'relu', 'tanh', 'linear', 'softplus'.
   - The tuner-function was set to choose between 2 and 20 layers, each comprised of up to 20 neurons each.

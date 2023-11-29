@@ -1,5 +1,5 @@
 # Property_Value_NN_Estimator
-
+### _Note, any .ipynb in this repo that uses the tensor-flow or keras-tuner library was processed in Google Coolab_
 ## Kaylee
   - Data acquisition and Redfin Wrapper, pulling data.
       - Cleaning Address data, feeding it into the wrapper

@@ -1,11 +1,17 @@
 # Property_Value_NN_Estimator
-### _Note, any .ipynb in this repo that uses the tensor-flow or keras-tuner library was processed in Google Coolab_
+### _Note, any .ipynb in this repo that uses the tensor-flow or keras-tuner library was processed in Google Colab_
+
+## Project Overview
+This neural network model was trained to predict the value of single family homes in Dallas, TX by taking in a number of features such as number of bedrooms, square footage, and zip code. 
+
 ## Kaylee
-  - **Kaylee, please add a quick note about concatenating the data that you pulled, as well as another quick note about formatting the addresses to push into the wrapper without error.**
-  - Data acquisition and Redfin Wrapper, pulling data.
-      - Cleaning Address data, feeding it into the wrapper
-      - Pulling the data
-      - Cleaning the pulled data
+  ### Data Aquisition
+  - This model is trained on a list of addresses in Dallas, TX that were sourced from the [Dallas Central Appraisal District website](https://www.dallascad.org/). This downloadable csv was then cleaned to remove any rows with empty data, so that it was usable with an API. This cleaned dataset can be found in data/Addresses_cleaned.csv.
+  - All data on the house features was obtained from [Redfin](redfin.com). The addresses from DCAD were reformatted to be used with a wrapper to access Redfin's unlisted API. This allowed access to the data without violating Redfin's terms of use against webscraping.
+    - [Redfin API Wrapper](https://github.com/reteps/redfin)
+    - The code used to pull this data is located in final_code/ETL.ipynb
+      - Due to the extremely long length of time it takes to pull data using this method, this was done in batches of 10,000 addresses at a time. These batches were exported as csvs to the data folder and then concatenated.
+      - Despite a list comprising over 600,000 addresses, time constraints permitted data extraction for only around 40,000 homes.
     
 ## Martin
   - Exploratory data analysis of our data to better understand the scope of the project.

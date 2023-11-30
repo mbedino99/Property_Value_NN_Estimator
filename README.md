@@ -8,8 +8,15 @@
       - Cleaning the pulled data
     
 ## Martin
-  - Shape of the data, integrity of the data, regression and stats tests.
-      - Understanding the upper/lower bounds, and resolving regression visual errors.
+  - Exploratory data analysis of our data to better understand the scope of the project.
+    - Used visualization tools and statistical analysis to visualize and understand the shape and scope of our data, as well as performed statisatical analysis to understand the correlations between the variables in our data and our target variable of home prices.
+    - Cleaned data in order to better account for outliers, visualize upper and lowe bounds as well as test for normality
+  - Perform a preeliminary OLS regression of the coefficients in order to visualize the validity of our data for further tuning.
+    - Test the data to ensure it clears the classical assumptions
+      - we found a small but possible instance of autocorrelation
+      - we found the data to be homoskedastic
+      - there is no perfect linear relation between home prices and our explanatory variables
+  - From this quick analysis we find a adj. r^2 value of 0.678, meaning there is room for improvement of the model through hyperparameter tuning 
 
 ## Nathan-Andrew Tompkins
   ### _code located in file: nn_model_tuning_2_

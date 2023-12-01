@@ -46,6 +46,6 @@ This neural network model was trained to predict the value of single family home
   - **mae: 38710.2656**. Indicates that our data, on average, is off by ~38k. Again this is due to the high variance and low number of datapoints of houses above 2.5$ million.
   
 ## David
-  - Talk about the content of the data using Tableau visualizations and distribution of the features among the addresses
-  - Price distribution
+[Tableau Story](https://public.tableau.com/shared/XTXD43674?:display_count=n&:origin=viz_share_link)
+Visualizations generated to illustrate full dataset as well as our cleaned dataset and our model's performance. Visualizations include price distribution maps, and datapoints by ZIP Code.
 
